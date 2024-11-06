@@ -4,10 +4,19 @@
  */
 package Dominio;
 
+import java.util.List;
+
 /**
- *
- * @author Chris
+ * @author Angel De Jesus Santos Arabia - 205750
+ * @author Jose Miguel Rodriguez Reyna - 216743
+ * @author Jesus Gabriel Medina Leyva - 247527
+ * @author Cristopher Alberto Elizalde Andrade - 240005
  */
 public class Game {
-    
+
+    private List<User> users;
+    private Board board;
+    private boolean gameStatus;
+    private List<User> currentTurn;
+    private List<Boat> boatsToPlace;
 }

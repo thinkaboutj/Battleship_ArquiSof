@@ -5,9 +5,14 @@
 package Dominio;
 
 /**
- *
- * @author Chris
+ * @author Angel De Jesus Santos Arabia - 205750
+ * @author Jose Miguel Rodriguez Reyna - 216743
+ * @author Jesus Gabriel Medina Leyva - 247527
+ * @author Cristopher Alberto Elizalde Andrade - 240005
  */
 public class Position {
-    
+
+    private int x;
+    private int y;
+    private boolean busy;
 }
