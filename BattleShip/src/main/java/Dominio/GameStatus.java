@@ -1,10 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
  */
 package Dominio;
-
-import java.util.List;
 
 /**
  * @author Angel De Jesus Santos Arabia - 205750
@@ -12,12 +10,6 @@ import java.util.List;
  * @author Jesus Gabriel Medina Leyva - 247527
  * @author Cristopher Alberto Elizalde Andrade - 240005
  */
-public class Shoot {
-
-    private boolean hit;
-    private List<Position> positionShooted;
-
-    public boolean ShootValidation() {
-        return true;
-    }
+public enum GameStatus {
+    notStarted, inProgress, finished
 }
