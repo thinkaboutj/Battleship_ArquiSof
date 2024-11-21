@@ -20,4 +20,30 @@ public class Shoot {
     public boolean ShootValidation() {
         return true;
     }
+
+    public Shoot() {
+    }
+    
+    public Shoot(boolean hit, List<Position> positionShooted) {
+        this.hit = hit;
+        this.positionShooted = positionShooted;
+    }
+
+    public boolean isHit() {
+        return hit;
+    }
+
+    public void setHit(boolean hit) {
+        this.hit = hit;
+    }
+
+    public List<Position> getPositionShooted() {
+        return positionShooted;
+    }
+
+    public void setPositionShooted(List<Position> positionShooted) {
+        this.positionShooted = positionShooted;
+    }
+    
+    
 }

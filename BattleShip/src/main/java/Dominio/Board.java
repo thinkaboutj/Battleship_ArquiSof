@@ -30,4 +30,57 @@ public class Board {
         return true;
     }
 
+    public Board() {
+    }
+
+    public Board(List<Boat> botes, ArrayList<Position> positions, int gridWith, int gridHeight, List<Shoot> pastShots) {
+        this.botes = botes;
+        this.positions = positions;
+        this.gridWith = gridWith;
+        this.gridHeight = gridHeight;
+        this.pastShots = pastShots;
+    }
+
+    public List<Boat> getBotes() {
+        return botes;
+    }
+
+    public void setBotes(List<Boat> botes) {
+        this.botes = botes;
+    }
+
+    public ArrayList<Position> getPositions() {
+        return positions;
+    }
+
+    public void setPositions(ArrayList<Position> positions) {
+        this.positions = positions;
+    }
+
+    public int getGridWith() {
+        return gridWith;
+    }
+
+    public void setGridWith(int gridWith) {
+        this.gridWith = gridWith;
+    }
+
+    public int getGridHeight() {
+        return gridHeight;
+    }
+
+    public void setGridHeight(int gridHeight) {
+        this.gridHeight = gridHeight;
+    }
+
+    public List<Shoot> getPastShots() {
+        return pastShots;
+    }
+
+    public void setPastShots(List<Shoot> pastShots) {
+        this.pastShots = pastShots;
+    }
+    
+    
+
 }

@@ -19,4 +19,57 @@ public class User {
     private List<Boat> boats;
     private int score;
     private int shotsFired;
+
+    public User() {
+    }
+
+    public User(String username, String avatarPath, List<Boat> boats, int score, int shotsFired) {
+        this.username = username;
+        this.avatarPath = avatarPath;
+        this.boats = boats;
+        this.score = score;
+        this.shotsFired = shotsFired;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getAvatarPath() {
+        return avatarPath;
+    }
+
+    public void setAvatarPath(String avatarPath) {
+        this.avatarPath = avatarPath;
+    }
+
+    public List<Boat> getBoats() {
+        return boats;
+    }
+
+    public void setBoats(List<Boat> boats) {
+        this.boats = boats;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getShotsFired() {
+        return shotsFired;
+    }
+
+    public void setShotsFired(int shotsFired) {
+        this.shotsFired = shotsFired;
+    }
+    
+    
 }
