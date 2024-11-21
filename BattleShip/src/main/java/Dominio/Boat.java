@@ -51,6 +51,40 @@ public class Boat {
         }
 
     }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public List<Position> getPosition() {
+        return position;
+    }
+
+    public void setPosition(List<Position> position) {
+        this.position = position;
+    }
+
+    public ColorManager getColor() {
+        return color;
+    }
+
+    public void setColor(ColorManager color) {
+        this.color = color;
+    }
+
+    public boolean isHitStatus() {
+        return hitStatus;
+    }
+
+    public void setHitStatus(boolean hitStatus) {
+        this.hitStatus = hitStatus;
+    }
+    
+    
     
     public void setBoatPlacementColour(BoatPlacementColour boatPlacementColour) {
         this.boatPlacementColour = boatPlacementColour;
