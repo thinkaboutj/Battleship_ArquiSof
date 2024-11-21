@@ -11,12 +11,13 @@ import org.netbeans.lib.awtextra.AbsoluteConstraints;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SetUpView extends JFrame {
+public class SetUpView extends JFrame implements MouseListener, MouseMotionListener {
     private JLabel[][] tableroLabels = new JLabel[10][10];
     private JLayeredPane capaJuego;
     private List<JLabel> barcosColocados = new ArrayList<>();
     private JButton btnConfirmar;
     private boolean tableroConfirmado = false;
+    public static boolean debugModeActive;
 
     // Tipos y cantidades de barcos
     private int[] tiposBarcos = {4, 3, 2, 1}; 
@@ -52,7 +53,7 @@ public class SetUpView extends JFrame {
 
     private JPanel crearTablero() {
         JPanel tablero = new JPanel(new GridLayout(10, 10));
-        tablero.setPreferredSize(new Dimension(500, 500));
+        tablero.setPreferredSize(new Dimension(900, 900));
         tablero.setOpaque(false); // Transparente para ver los barcos
 
         for (int i = 0; i < 10; i++) {
@@ -319,6 +320,41 @@ public class SetUpView extends JFrame {
                 new SetUpView().setVisible(true);
             }
         });
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
