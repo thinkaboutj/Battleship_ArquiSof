@@ -19,8 +19,8 @@ public class SetUpView extends JFrame {
     private boolean tableroConfirmado = false;
 
     // Tipos y cantidades de barcos
-    private int[] tiposBarcos = {4, 3, 2, 1}; // Tamaños de naves
-    private int[] cantidadesBarcos = {2, 2, 4, 3}; // Cantidades por tipo
+    private int[] tiposBarcos = {4, 3, 2, 1}; 
+    private int[] cantidadesBarcos = {2, 2, 4, 3};
 
     public SetUpView() {
         initComponents();
@@ -28,27 +28,78 @@ public class SetUpView extends JFrame {
     }
 
     private void crearInterfazJuego() {
-        // Crear el contenedor principal en capas
         capaJuego = new JLayeredPane();
         capaJuego.setLayout(null);
-        capaJuego.setBounds(0, 0, 800, 800); // Tamaño de la ventana
+        capaJuego.setBounds(0, 0, 800, 600);
         this.add(capaJuego);
+
+        // Agregar imagen de fondo
+        JLabel lblFondo = new JLabel(new ImageIcon(getClass().getResource("/images/PantallaInicio.jpg")));
+        lblFondo.setBounds(0, 0, 800, 600);
+        capaJuego.add(lblFondo, Integer.valueOf(0));
 
         // Crear el tablero
         JPanel tablero = crearTablero();
-        tablero.setBounds(50, 50, 500, 500); // Posición y tamaño del tablero
-        capaJuego.add(tablero, Integer.valueOf(0)); // Añadir el tablero al nivel base
+        tablero.setBounds(150, 50, 500, 500); // Ajustar posición y tamaño del tablero
+        capaJuego.add(tablero, Integer.valueOf(1));
 
-        // Añadir los barcos al nivel superior
+        // Agregar los barcos
         agregarBarcos();
 
-        // Añadir botón de confirmación
+        // Agregar botón de confirmación
         agregarBotonConfirmar();
+    }
+
+    private JPanel crearTablero() {
+        JPanel tablero = new JPanel(new GridLayout(10, 10));
+        tablero.setPreferredSize(new Dimension(500, 500));
+        tablero.setOpaque(false); // Transparente para ver los barcos
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                JLabel casilla = new JLabel();
+                casilla.setBorder(BorderFactory.createLineBorder(Color.GRAY)); // Borde gris
+                casilla.setBackground(new Color(173, 216, 230)); // Azul claro (agua)
+                casilla.setOpaque(true); // Hacer visible el color
+                tableroLabels[i][j] = casilla;
+                tablero.add(casilla);
+            }
+        }
+
+        return tablero;
+    }
+
+    private void agregarBarcos() {
+        String[] rutasImagenes = {
+            "/images/PortaAviones.png",
+            "/images/Crucero.png",
+            "/images/Submarino.png",
+            "/images/Barco.png"
+        };
+
+        int[] anchosBase = {200, 150, 100, 50};
+        int alturaBase = 50;
+        int inicioX = 50;
+        int inicioY = 550; // Colocamos los barcos debajo del tablero
+
+        for (int tipo = 0; tipo < tiposBarcos.length; tipo++) {
+            for (int i = 0; i < cantidadesBarcos[tipo]; i++) {
+                JLabel barco = crearBarco(
+                    rutasImagenes[tipo],
+                    anchosBase[tipo],
+                    alturaBase,
+                    inicioX + (i * (anchosBase[tipo] + 10)), // Espaciado entre barcos
+                    inicioY
+                );
+                capaJuego.add(barco, Integer.valueOf(1));
+            }
+            inicioX += 10; // Separamos los tipos de barcos
+        }
     }
 
     private void agregarBotonConfirmar() {
         btnConfirmar = new JButton("Confirmar Tablero");
-        btnConfirmar.setBounds(600, 600, 150, 50);
+        btnConfirmar.setBounds(600, 500, 150, 50); // Ajustar posición del botón
         btnConfirmar.addActionListener(e -> confirmarTablero());
         capaJuego.add(btnConfirmar, Integer.valueOf(2));
     }
@@ -78,51 +129,6 @@ public class SetUpView extends JFrame {
         }
     }
 
-    private JPanel crearTablero() {
-        JPanel tablero = new JPanel(new GridLayout(10, 10));
-        tablero.setPreferredSize(new Dimension(500, 500));
-        tablero.setOpaque(false); // Transparente para ver los barcos
-
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                JLabel casilla = new JLabel();
-                casilla.setBorder(BorderFactory.createLineBorder(Color.BLACK)); // Borde visible
-                casilla.setBackground(new Color(173, 216, 230)); // Azul claro (agua)
-                casilla.setOpaque(true); // Hacer visible el color
-                tableroLabels[i][j] = casilla;
-                tablero.add(casilla);
-            }
-        }
-
-        return tablero;
-    }
-
-    private void agregarBarcos() {
-        // Naves con diferentes tamaños y cantidades
-        String[] rutasImagenes = {
-            "/images/PortaAviones.png",  // 4 casillas
-            "/images/Crucero.png",       // 3 casillas
-            "/images/Submarino.png",     // 2 casillas
-            "/images/Barco.png"          // 1 casilla
-        };
-
-        int[] anchosBase = {200, 150, 100, 50};
-        int alturaBase = 50;
-        int inicioY = 100;
-
-        for (int tipo = 0; tipo < tiposBarcos.length; tipo++) {
-            for (int i = 0; i < cantidadesBarcos[tipo]; i++) {
-                JLabel barco = crearBarco(
-                    rutasImagenes[tipo], 
-                    anchosBase[tipo], 
-                    alturaBase, 
-                    600, 
-                    inicioY + (i * 100)
-                );
-                capaJuego.add(barco, Integer.valueOf(1));
-            }
-        }
-    }
 
     private JLabel crearBarco(String rutaImagen, int ancho, int alto, int x, int y) {
         JLabel barco = new JLabel();

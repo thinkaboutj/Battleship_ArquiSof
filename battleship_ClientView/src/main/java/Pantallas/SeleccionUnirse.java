@@ -16,13 +16,13 @@ import javax.swing.JLabel;
  *
  * @author jesus
  */
-public class SeleccionView extends javax.swing.JFrame {
+public class SeleccionUnirse extends javax.swing.JFrame {
 
     private JLabel lblSeleccionado; // Para rastrear el color seleccionado
     private javax.swing.Timer parpadeoTimer; // Referencia al temporizador
 
 
-    public SeleccionView() {
+    public SeleccionUnirse() {
         initComponents(); // Inicialización generada por NetBeans
         configurarInteractividad(); // Método personalizado
         
@@ -199,20 +199,20 @@ public class SeleccionView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SeleccionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SeleccionUnirse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SeleccionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SeleccionUnirse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SeleccionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SeleccionUnirse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SeleccionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SeleccionUnirse.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SeleccionView().setVisible(true);
+                new SeleccionUnirse().setVisible(true);
             }
         });
     }
