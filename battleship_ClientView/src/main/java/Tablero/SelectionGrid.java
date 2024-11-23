@@ -202,4 +202,27 @@ public class SelectionGrid extends Rectangulo{
         }
 
     }
+    
+     public Position getPositionInGrid(int mouseX, int mouseY) {
+        if(!isPositionInside(new Position(mouseX,mouseY))) return new Position(-1,-1);
+
+        return new Position((mouseX - position.x)/CELL_SIZE, (mouseY - position.y)/CELL_SIZE);
+    }
+     
+     public boolean canPlaceShipAt(int gridX, int gridY, int segments, boolean sideways) {
+        if(gridX < 0 || gridY < 0) return false;
+
+        if(sideways) { 
+            if(gridY > GRID_HEIGHT || gridX + segments > GRID_WIDTH) return false;
+            for(int x = 0; x < segments; x++) {
+                if(markers[gridX+x][gridY].isBoat()) return false;
+            }
+        } else { 
+            if(gridY + segments > GRID_HEIGHT || gridX > GRID_WIDTH) return false;
+            for(int y = 0; y < segments; y++) {
+                if(markers[gridX][gridY+y].isBoat()) return false;
+            }
+        }
+        return true;
+    }
 }

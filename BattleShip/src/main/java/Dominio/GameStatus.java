@@ -11,5 +11,5 @@ package Dominio;
  * @author Cristopher Alberto Elizalde Andrade - 240005
  */
 public enum GameStatus {
-    notStarted, inProgress, finished
+    placingBoats, firingShots, gameOver
 }
