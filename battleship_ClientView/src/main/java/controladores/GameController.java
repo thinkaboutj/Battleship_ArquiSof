@@ -20,6 +20,9 @@ import recursos.Computadora;
 import recursos.ControlaComputadora;
 import recursos.StatusPanel;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  *
  * @author Chris
@@ -43,21 +46,33 @@ public class GameController extends JPanel implements MouseListener, MouseMotion
     private int placeBoatIndex;
 
     public static boolean debugModeActive;
+    private Image backgroundImage;
 
     public GameController(int compChoice) {
+        // Cargar la imagen de fondo
+        backgroundImage = new ImageIcon(getClass().getResource("/images/PantallaInicio.jpg")).getImage();
+
         computer = new SelectionGrid(0, 0);
         player = new SelectionGrid(0, computer.getHeight() + 50);
-        this.setBackground(new Color(42, 136, 163));
         this.setPreferredSize(new Dimension(computer.getWidth(), player.getPosition().y + player.getHeight()));
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
+
         if (compChoice == 0) {
             boardController = new Computadora(player);
         } else {
             boardController = new ControlaComputadora(player, compChoice == 2, compChoice == 2);
         }
+
         statusPanel = new StatusPanel(new Position(0, computer.getHeight() + 1), computer.getWidth(), 49);
         this.restart();
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        // Dibujar la imagen de fondo
+        g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
     }
 
     public void paint(Graphics g) {

@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package com.pruebapantallas;
 
 import controladores.GameController;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /**
  *
@@ -16,13 +12,10 @@ import javax.swing.JOptionPane;
  */
 public class NewMain implements KeyListener {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         NewMain game = new NewMain();
     }
-    
+
     private GameController gamePanel;
 
     /**
@@ -31,7 +24,7 @@ public class NewMain implements KeyListener {
      */
     public NewMain() {
         // Choose the AI Difficulty
-        String[] options = new String[] {"Easy", "Medium", "Hard"};
+        String[] options = new String[]{"Easy", "Medium", "Hard"};
         String message = "Easy will make moves entirely randomly,\nMedium will focus on areas where it finds ships,"
                 + "\nand Hard will make smarter choices over Medium.";
         int difficultyChoice = JOptionPane.showOptionDialog(null, message,
@@ -39,11 +32,23 @@ public class NewMain implements KeyListener {
                 JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
                 null, options, options[0]);
 
-        JFrame frame = new JFrame("Battleship");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+        // Crear el JFrame personalizado con fondo
+        JFrame frame = new JFrame("Battleship") {
+            @Override
+            public void paint(Graphics g) {
+                super.paint(g);
+                // Dibujar el fondo
+                ImageIcon fondo = new ImageIcon(getClass().getResource("/images/PantallaInicio.jpg"));
+                g.drawImage(fondo.getImage(), 0, 0, getWidth(), getHeight(), this);
+            }
+        };
 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(true);
+
+        // Crear panel del juego
         gamePanel = new GameController(difficultyChoice);
+        gamePanel.setOpaque(false); 
         frame.getContentPane().add(gamePanel);
 
         frame.addKeyListener(this);
@@ -68,6 +73,7 @@ public class NewMain implements KeyListener {
      */
     @Override
     public void keyTyped(KeyEvent e) {}
+
     /**
      * Not used.
      *
@@ -75,5 +81,5 @@ public class NewMain implements KeyListener {
      */
     @Override
     public void keyReleased(KeyEvent e) {}
-    
+
 }
