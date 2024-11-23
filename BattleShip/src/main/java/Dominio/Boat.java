@@ -1,27 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Dominio;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
-import java.io.File;
-import java.io.IOException;
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.ImageIcon;
 
-/**
- * @author Angel De Jesus Santos Sarabia - 205750
- * @author Jose Miguel Rodriguez Reyna - 216743
- * @author Jesus Gabriel Medina Leyva - 247527
- * @author Cristopher Alberto Elizalde Andrade - 240005
- */
 public class Boat {
-
     private int size;
     private List<Position> position;
     private ColorManager color;
@@ -32,7 +18,7 @@ public class Boat {
     private boolean isSideways;
     private int destroyedSections;
     private BoatPlacementColour boatPlacementColour;
-    private BufferedImage boatImage;
+    private Image boatImage;
     
     public Boat(Position gridPosition, Position drawPosition, int segments, boolean isSideways) {
         this.gridPosition = gridPosition;
@@ -45,58 +31,50 @@ public class Boat {
     }
     
     private void loadBoatImage() {
+        String imagePath = "";
+        switch(segments) {
+            case 4:
+                imagePath = "/images/PortaAviones.png";
+                break;
+            case 3:
+                imagePath = "/images/Crucero.png";
+                break;
+            case 2:
+                imagePath = "/images/Submarino.png";
+                break;
+            case 1:
+                imagePath = "/images/Barco.png";
+                break;
+        }
         try {
-            boatImage = ImageIO.read(new File("images/Barco.png"));
-        } catch (IOException e) {
-            System.err.println("Error al cargar la imagen del barco: " + e.getMessage());
+            this.boatImage = new ImageIcon(getClass().getResource(imagePath)).getImage();
+        } catch (Exception e) {
+            System.err.println("Error loading boat image: " + imagePath);
             e.printStackTrace();
         }
     }
     
     public void paint(Graphics g) {
         if (boatImage != null) {
-            Graphics2D g2d = (Graphics2D) g;
-            int width = 30 * segments; // Ancho basado en el número de segmentos
-            int height = 30; // Altura fija
+            int width = isSideways ? segments * 30 : 30;
+            int height = isSideways ? 30 : segments * 30;
             
             if (this.boatPlacementColour == Boat.BoatPlacementColour.PLACED) {
                 if (this.destroyedSections >= this.segments) {
-                    // Si está destruido, dibujamos en rojo
-                    g2d.setColor(new Color(255, 0, 0, 128));
+                    g.setColor(new Color(255, 0, 0, 128));  // Semi-transparent red for destroyed
+                    g.fillRect(drawPosition.x, drawPosition.y, width, height);
                 }
+                g.drawImage(boatImage, drawPosition.x, drawPosition.y, width, height, null);
             } else {
-                // Color para validación de colocación
+                // For placement preview
                 Color overlayColor = this.boatPlacementColour == Boat.BoatPlacementColour.VALID ? 
                     new Color(0, 255, 0, 128) : new Color(255, 0, 0, 128);
-                g2d.setColor(overlayColor);
-            }
-
-            if (isSideways) {
-                // Dibujar horizontal
-                g2d.drawImage(boatImage, 
-                    drawPosition.x, 
-                    drawPosition.y,
-                    width,
-                    height,
-                    null);
-            } else {
-                // Dibujar vertical
-                g2d.drawImage(boatImage, 
-                    drawPosition.x,
-                    drawPosition.y,
-                    height, // Intercambiamos width y height para la orientación vertical
-                    width,
-                    null);
-            }
-            
-            // Si hay un color de overlay (destruido o validación), dibujamos un rectángulo semitransparente
-            if (g2d.getColor().getAlpha() != 255) {
-                g2d.fillRect(drawPosition.x, drawPosition.y, 
-                    isSideways ? width : height,
-                    isSideways ? height : width);
+                g.setColor(overlayColor);
+                g.fillRect(drawPosition.x, drawPosition.y, width, height);
+                g.drawImage(boatImage, drawPosition.x, drawPosition.y, width, height, null);
             }
         } else {
-            // Fallback al método original si la imagen no se pudo cargar
+            // Fallback to original geometric drawing if image loading fails
             if (this.boatPlacementColour == Boat.BoatPlacementColour.PLACED) {
                 g.setColor(this.destroyedSections >= this.segments ? Color.RED : Color.DARK_GRAY);
             } else {
@@ -111,6 +89,7 @@ public class Boat {
         }
     }
 
+    // [Mantener todos los getters y setters existentes sin cambios]
     public int getSize() {
         return size;
     }
@@ -184,25 +163,23 @@ public class Boat {
                 result.add(new Position(this.gridPosition.x, this.gridPosition.y + x));
             }
         }
-
         return result;
     }
-    
+
+    // Los métodos paintVertical y paintHorizontal se mantienen como respaldo
     private void paintVertical(Graphics g) {
         int boatWidth = 24;
         int boatLeftX = this.drawPosition.x + 15 - boatWidth / 2;
-        g.fillPolygon(new int[]{this.drawPosition.x + 15, boatLeftX, boatLeftX + boatWidth},
-                     new int[]{this.drawPosition.y + 7, this.drawPosition.y + 30, this.drawPosition.y + 30},
-                     3);
+        g.fillPolygon(new int[]{this.drawPosition.x + 15, boatLeftX, boatLeftX + boatWidth}, 
+                      new int[]{this.drawPosition.y + 7, this.drawPosition.y + 30, this.drawPosition.y + 30}, 3);
         g.fillRect(boatLeftX, this.drawPosition.y + 30, boatWidth, (int)(30.0 * ((double)this.segments - 1.2)));
     }
     
     private void paintHorizontal(Graphics g) {
         int boatWidth = 24;
         int boatTopY = this.drawPosition.y + 15 - boatWidth / 2;
-        g.fillPolygon(new int[]{this.drawPosition.x + 7, this.drawPosition.x + 30, this.drawPosition.x + 30},
-                     new int[]{this.drawPosition.y + 15, boatTopY, boatTopY + boatWidth},
-                     3);
+        g.fillPolygon(new int[]{this.drawPosition.x + 7, this.drawPosition.x + 30, this.drawPosition.x + 30}, 
+                      new int[]{this.drawPosition.y + 15, boatTopY, boatTopY + boatWidth}, 3);
         g.fillRect(this.drawPosition.x + 30, boatTopY, (int)(30.0 * ((double)this.segments - 1.2)), boatWidth);
     }
     
