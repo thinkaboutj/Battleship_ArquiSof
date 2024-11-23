@@ -6,6 +6,7 @@ package Pantallas;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -137,6 +138,20 @@ public class InicioView extends javax.swing.JFrame {
 
     private void btnUnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnirsePartidaActionPerformed
         // TODO add your handling code here:
+        
+        // Solicitar al usuario que ingrese un código
+    String codigo = JOptionPane.showInputDialog(this, "Ingresa el código de la partida:", "Unirse a Partida", JOptionPane.PLAIN_MESSAGE);
+    
+    // Verificar si se ingresó un código
+    if (codigo != null && !codigo.trim().isEmpty()) {
+        // Cambiar a otra pantalla (por ejemplo, abrir un nuevo JFrame)
+        SeleccionUnirse nuevaPantalla = new SeleccionUnirse(); // Aquí asumimos que tienes otra clase llamada NuevaPantalla
+        nuevaPantalla.setVisible(true); // Mostrar la nueva pantalla
+        this.dispose(); // Cerrar la pantalla actual (opcional)
+    } else {
+        // Mostrar un mensaje de error si no se ingresó un código válido
+        JOptionPane.showMessageDialog(this, "Debe ingresar un código válido para continuar.", "Error", JOptionPane.ERROR_MESSAGE);
+    }
     }//GEN-LAST:event_btnUnirsePartidaActionPerformed
 
     /**
