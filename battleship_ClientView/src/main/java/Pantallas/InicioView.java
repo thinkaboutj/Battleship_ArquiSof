@@ -134,6 +134,10 @@ public class InicioView extends javax.swing.JFrame {
 
     private void btnCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartidaActionPerformed
         // TODO add your handling code here:
+        SeleccionCrear crear = new SeleccionCrear();
+        
+        crear.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnCrearPartidaActionPerformed
 
     private void btnUnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnirsePartidaActionPerformed
