@@ -4,6 +4,7 @@
  */
 package Dominio;
 
+import Network.ClientConnectionHandler;
 import java.util.List;
 
 /**
@@ -19,8 +20,13 @@ public class User {
     private List<Boat> boats;
     private int score;
     private int shotsFired;
+    private ClientConnectionHandler client;
 
     public User() {
+    }
+
+    public User(ClientConnectionHandler client) {
+        this.client = client;
     }
 
     public User(String username, String avatarPath, List<Boat> boats, int score, int shotsFired) {
@@ -30,6 +36,11 @@ public class User {
         this.score = score;
         this.shotsFired = shotsFired;
     }
+    
+    public int getPlayerId() {
+        return client.getClientId();
+    }
+
 
     public String getUsername() {
         return username;
@@ -70,6 +81,5 @@ public class User {
     public void setShotsFired(int shotsFired) {
         this.shotsFired = shotsFired;
     }
-    
-    
+
 }
