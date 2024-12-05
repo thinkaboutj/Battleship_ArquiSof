@@ -1,0 +1,4 @@
+dic 05, 2024 9:37:18 A. M. Servidor.BattleshipServer createServerSocket
+CONFIG: IP ADDRESS OF THE SERVER: 192.168.100.13
+dic 05, 2024 9:37:32 A. M. Servidor.ClientConnectionHandler getMessageFromUser
+CONFIG: Message from client 1 EXIT
