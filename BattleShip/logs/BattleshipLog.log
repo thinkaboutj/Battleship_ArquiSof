@@ -1,6 +1,2 @@
-dic 05, 2024 10:12:39 A. M. Servidor.BattleshipServer createServerSocket
+dic 05, 2024 3:25:29 P. M. Servidor.BattleshipServer createServerSocket
 CONFIG: IP ADDRESS OF THE SERVER: 192.168.100.13
-dic 05, 2024 10:13:30 A. M. Servidor.ClientConnectionHandler getMessageFromUser
-CONFIG: Message from client 1 FLEET_REQUEST:[20,29,61,96,16,17,45,55,80,90,13,23,33,82,83,84,58,68,78,88];
-dic 05, 2024 10:13:40 A. M. Servidor.ClientConnectionHandler getMessageFromUser
-CONFIG: Message from client 1 EXIT
