@@ -4,6 +4,7 @@
  */
 package Pantallas;
 
+import Cliente.Client;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -134,10 +135,17 @@ public class InicioView extends javax.swing.JFrame {
 
     private void btnCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartidaActionPerformed
         // TODO add your handling code here:
-        SeleccionCrear crear = new SeleccionCrear();
         
-        crear.setVisible(true);
-        dispose();
+    // Iniciar la aplicación JavaFX (Client)
+    new Thread(() -> {
+        try {
+            Client.main(new String[]{}); // Llama al método main de la clase Client
+        } catch (Exception e) {
+            e.printStackTrace(); // Manejo de excepciones
+        }
+    }).start();
+
+
     }//GEN-LAST:event_btnCrearPartidaActionPerformed
 
     private void btnUnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnirsePartidaActionPerformed
@@ -148,10 +156,14 @@ public class InicioView extends javax.swing.JFrame {
     
     // Verificar si se ingresó un código
     if (codigo != null && !codigo.trim().isEmpty()) {
-        // Cambiar a otra pantalla (por ejemplo, abrir un nuevo JFrame)
-        SeleccionUnirse nuevaPantalla = new SeleccionUnirse(); // Aquí asumimos que tienes otra clase llamada NuevaPantalla
-        nuevaPantalla.setVisible(true); // Mostrar la nueva pantalla
-        this.dispose(); // Cerrar la pantalla actual (opcional)
+        // Iniciar la aplicación JavaFX (Client)
+    new Thread(() -> {
+        try {
+            Client.main(new String[]{}); // Llama al método main de la clase Client
+        } catch (Exception e) {
+            e.printStackTrace(); // Manejo de excepciones
+        }
+    }).start();
     } else {
         // Mostrar un mensaje de error si no se ingresó un código válido
         JOptionPane.showMessageDialog(this, "Debe ingresar un código válido para continuar.", "Error", JOptionPane.ERROR_MESSAGE);

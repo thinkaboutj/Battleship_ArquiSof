@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file contains all the UI elements which we want to load to the window initially. Some of the elements will contain
-corresponding methods which will be invoked in the java class specified in tag fx:controller -->
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cliente.MainMenuController">
+<BorderPane fx:id="mainBorderPane" 
+            maxHeight="-Infinity" 
+            maxWidth="-Infinity" 
+            minHeight="-Infinity" 
+            minWidth="-Infinity" 
+            prefHeight="600.0" 
+            prefWidth="900.0" 
+            style="-fx-background-image: url('/images/PantallaInicio.jpg'); 
+       -fx-background-size: stretch; 
+       -fx-background-position: center;"
+            xmlns="http://javafx.com/javafx/8.0.111" 
+            xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="Cliente.MainMenuController">
    <center>
-      <VBox fx:id="centralVBox" alignment="CENTER" visible="false" BorderPane.alignment="CENTER">
+      <VBox fx:id="centralVBox" alignment="CENTER" visible="true" BorderPane.alignment="CENTER">
          <children>
-            <VBox fx:id="playerNameVBox" alignment="CENTER" spacing="5.0">
+            <VBox fx:id="playerNameVBox" alignment="CENTER" spacing="10.0">
                <children>
-                  <TextField fx:id="nameTextField" maxWidth="150.0" onAction="#onNameTextFieldEntered" promptText="Enter your name" VBox.vgrow="NEVER">
+                  <Label text="Selecciona tu nombre" style="-fx-font-weight: bold;"/>
+                  <TextField fx:id="nameTextField" maxWidth="150.0" onAction="#onNameTextFieldEntered" promptText="Ingresa tu nombre" VBox.vgrow="NEVER">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
                   </TextField>
-                  <Button fx:id="featureButton" mnemonicParsing="false" onAction="#onFeatureButtonClicked" text="Send" />
+                  
+                  <Label text="Selecciona tu color" style="-fx-font-weight: bold;"/>
+                  <ComboBox fx:id="colorComboBox" maxWidth="150.0" promptText="Elige un color"/>
+                  
+                  <Button fx:id="featureButton" mnemonicParsing="false" onAction="#onFeatureButtonClicked" text="Confirmar" />
                   <ProgressIndicator fx:id="socketProgressIndicator" prefHeight="43.0" prefWidth="44.0" visible="false" />
                </children>
             </VBox>

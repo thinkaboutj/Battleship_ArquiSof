@@ -9,6 +9,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressIndicator;
 import javafx.scene.control.TextField;
@@ -24,10 +25,6 @@ import java.util.logging.Level;
 import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
 import static com.spanish_inquisition.battleship.common.AppLogger.logger;
 
-/**
- * 
- * @author jesus
- */
 public class MainMenuController {
 
     @FXML
@@ -62,41 +59,61 @@ public class MainMenuController {
     BorderPane mainBorderPane;
     @FXML
     ProgressIndicator socketProgressIndicator;
+    @FXML
+    ComboBox<String> colorComboBox;
 
     SocketClient socketClient;
     Game game;
     private int port = 6666;
     private String hostIP = "localhost";
 
-    /**
-     * This method is run automatically right after the fxml file's loaded
-     */
     @FXML
     public void initialize() {
         showMainElements();
+        colorComboBox.getItems().addAll("Azul", "Rojo");
+        colorComboBox.setPromptText("Elige un color");
     }
 
     private void showMainElements() {
         this.centralVBox.setVisible(true);
     }
 
-    /**
-     * After the button is clicked the information entered in the textField is sent to the server
-     */
     @FXML
     public void onFeatureButtonClicked() {
-        this.acceptANameAndStartNewGame(this.nameTextField.getText());
+        String playerName = nameTextField.getText();
+        String playerColor = colorComboBox.getValue();
+
+        if (playerName.isEmpty()) {
+            gameStatusLabel.setText("Por favor, ingresa un nombre");
+            return;
+        }
+
+        if (playerColor == null) {
+            gameStatusLabel.setText("Por favor, selecciona un color");
+            return;
+        }
+
+        this.acceptANameAndStartNewGame(playerName, playerColor);
     }
 
     @FXML
     public void onNameTextFieldEntered() {
-        this.acceptANameAndStartNewGame(this.nameTextField.getText());
+        String playerName = nameTextField.getText();
+        String playerColor = colorComboBox.getValue();
+
+        if (playerName.isEmpty() || playerColor == null) {
+            return;
+        }
+
+        this.acceptANameAndStartNewGame(playerName, playerColor);
     }
 
-    private void acceptANameAndStartNewGame(String text) {
+    private void acceptANameAndStartNewGame(String playerName, String playerColor) {
         setUpOnCloseRequest();
         setUpSocketConnection();
-        game.acceptPlayersName(text);
+        game.acceptPlayersName(playerName);
+        // Assuming you'll add this method to Game class
+        game.setPlayerColor(playerColor);
     }
 
     private void setUpSocketConnection() {
@@ -119,7 +136,6 @@ public class MainMenuController {
             socketProgressIndicator.setVisible(false);
             featureButton.setText("Send");
         }
-
     }
 
     private void setUpOnCloseRequest() {
@@ -143,7 +159,6 @@ public class MainMenuController {
                 new GameBoard(this.playersGridPane), game));
         fleetSetupButton.setVisible(true);
     }
-
 
     @FXML
     public void onFleetSetupButtonClicked() {
