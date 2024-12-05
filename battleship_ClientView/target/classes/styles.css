@@ -1,0 +1,16 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 dic 2024, 3:13:41 p. m.
+    Author     : jesus
+*/
+
+.hover-tile {
+    -fx-background-color: rgba(0, 128, 255, 0.5); /* Azul semitransparente */
+}
+
+.default-tile {
+    -fx-background-color: transparent; /* Sin color de fondo */
+}

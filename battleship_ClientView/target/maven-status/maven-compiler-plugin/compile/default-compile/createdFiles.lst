@@ -16,6 +16,7 @@ Pantallas\SeleccionCrear$2.class
 Pantallas\SeleccionCrear.class
 Cliente\boardController\OpponentBoardController.class
 Cliente\Game\Game$1.class
+Cliente\Game\Styles.class
 Cliente\board\GameBoardBuilder.class
 Pantallas\InicioView$4.class
 Cliente\network\ResponsesBus.class
