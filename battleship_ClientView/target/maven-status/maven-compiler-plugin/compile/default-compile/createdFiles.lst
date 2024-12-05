@@ -28,6 +28,7 @@ Pantallas\InicioView$1.class
 Cliente\Game\Fleet.class
 Pantallas\SeleccionUnirse$2.class
 Cliente\Game\Game.class
+Cliente\ColorComboBoxListCell.class
 Pantallas\SeleccionCrear$1.class
 Cliente\boardController\PlayerBoardController.class
 Pantallas\SeleccionCrear$ColorSelector.class

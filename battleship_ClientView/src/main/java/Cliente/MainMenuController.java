@@ -26,6 +26,7 @@ import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
 import static com.spanish_inquisition.battleship.common.AppLogger.logger;
 
 public class MainMenuController {
+
     @FXML
     VBox centralVBox;
     @FXML
@@ -100,7 +101,9 @@ public class MainMenuController {
         String playerName = nameTextField.getText();
         String playerColor = colorComboBox.getValue();
 
-        if (playerName.isEmpty() || playerColor == null) return;
+        if (playerName.isEmpty() || playerColor == null) {
+            return;
+        }
 
         this.acceptANameAndStartNewGame(playerName, playerColor);
     }
