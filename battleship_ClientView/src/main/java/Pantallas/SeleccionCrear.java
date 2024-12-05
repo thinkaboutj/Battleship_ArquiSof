@@ -4,7 +4,7 @@
  */
 package Pantallas;
 
-import com.pruebapantallas.NewMain;
+//import com.pruebapantallas.NewMain;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
@@ -104,7 +104,7 @@ private void agregarEventoClic() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             // Ejecutar la pantalla de NewMain
             dispose(); // Cierra la ventana actual
-            new NewMain(); // Inicia la lógica de NewMain
+//            new NewMain(); // Inicia la lógica de NewMain
         }
     });
 }
