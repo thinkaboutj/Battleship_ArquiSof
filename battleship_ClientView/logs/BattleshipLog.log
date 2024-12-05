@@ -1,20 +1,320 @@
-dic 05, 2024 9:37:28 A. M. Cliente.network.SocketClient setUpStreamsOnSocket
+dic 05, 2024 10:12:57 A. M. Cliente.network.SocketClient setUpStreamsOnSocket
 CONFIG: Setting up streams and socket
-dic 05, 2024 9:37:28 A. M. Cliente.network.SocketClient createUpdatesThreadAndRunIt
+dic 05, 2024 10:12:57 A. M. Cliente.network.SocketClient createUpdatesThreadAndRunIt
 CONFIG: Creating a thread for reading server updates
-dic 05, 2024 9:37:28 A. M. Cliente.network.SocketClient readServerUpdatesContinuously
+dic 05, 2024 10:12:57 A. M. Cliente.network.SocketClient readServerUpdatesContinuously
 CONFIG: Reading server updates continously
-dic 05, 2024 9:37:28 A. M. Cliente.Game.Game buildPlayersBoard
+dic 05, 2024 10:12:57 A. M. Cliente.Game.Game buildPlayersBoard
 CONFIG: Building player's board
-dic 05, 2024 9:37:28 A. M. Cliente.network.SocketClient sendStringToServer
-CONFIG: Attempting sent string to server = a
-dic 05, 2024 9:37:28 A. M. Cliente.network.SocketClient sendStringToServer
-CONFIG: Sent string to server = a
-dic 05, 2024 9:37:32 A. M. Cliente.network.SocketClient sendStringToServer
+dic 05, 2024 10:12:57 A. M. Cliente.network.SocketClient sendStringToServer
+CONFIG: Attempting sent string to server = popo
+dic 05, 2024 10:12:57 A. M. Cliente.network.SocketClient sendStringToServer
+CONFIG: Sent string to server = popo
+dic 05, 2024 10:13:20 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 8 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 16 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 73 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 81 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 10 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 28 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 38 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 69 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 12 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 13 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 23 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 75 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 85 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 86 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 51 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 52 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 53 to -fx-base: #ae857a;
+dic 05, 2024 10:13:20 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 54 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 8 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 16 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 73 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 81 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 10 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 28 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 38 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 69 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 12 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 13 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 23 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 75 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 85 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 86 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 51 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 52 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 53 to -fx-base: #ae857a;
+dic 05, 2024 10:13:25 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 54 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 1 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 14 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 81 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 56 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 66 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 58 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 86 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 87 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 33 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 34 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 44 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 52 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 62 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 63 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 8 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 9 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 19 to -fx-base: #ae857a;
+dic 05, 2024 10:13:26 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 29 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 1 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 14 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 81 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 56 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 66 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 58 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 86 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 87 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 33 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 34 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 44 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 52 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 62 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 63 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 8 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 9 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 19 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 29 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 1 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 14 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 81 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 56 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 66 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 58 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 86 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 87 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 33 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 34 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 44 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 52 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 62 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 63 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 8 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 9 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 19 to -fx-base: #ae857a;
+dic 05, 2024 10:13:27 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 29 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 1 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 14 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 81 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 56 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 66 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 58 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 86 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 87 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 33 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 34 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 44 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 52 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 62 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 63 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 8 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 9 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 19 to -fx-base: #ae857a;
+dic 05, 2024 10:13:28 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 29 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.Game placePlayersShips
+CONFIG: Setting fleet for player
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 20 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 29 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 61 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 96 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 16 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 17 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 45 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 55 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 80 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 90 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 13 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 23 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 33 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 82 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 83 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 84 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 58 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 68 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 78 to -fx-base: #ae857a;
+dic 05, 2024 10:13:29 A. M. Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Setting new color of tile 88 to -fx-base: #ae857a;
+dic 05, 2024 10:13:30 A. M. Cliente.Game.Game buildOpponentsBoard
+CONFIG: Building opponent's board
+dic 05, 2024 10:13:30 A. M. Cliente.network.SocketClient sendStringToServer
+CONFIG: Attempting sent string to server = FLEET_REQUEST:[20,29,61,96,16,17,45,55,80,90,13,23,33,82,83,84,58,68,78,88];
+dic 05, 2024 10:13:30 A. M. Cliente.network.SocketClient sendStringToServer
+CONFIG: Sent string to server = FLEET_REQUEST:[20,29,61,96,16,17,45,55,80,90,13,23,33,82,83,84,58,68,78,88];
+dic 05, 2024 10:13:40 A. M. Cliente.network.SocketClient sendStringToServer
 CONFIG: Attempting sent string to server = EXIT
-dic 05, 2024 9:37:32 A. M. Cliente.network.SocketClient sendStringToServer
+dic 05, 2024 10:13:40 A. M. Cliente.network.SocketClient sendStringToServer
 CONFIG: Sent string to server = EXIT
-dic 05, 2024 9:37:35 A. M. Cliente.network.SocketClient readServerUpdatesContinuously
+dic 05, 2024 10:13:43 A. M. Cliente.network.SocketClient readServerUpdatesContinuously
 CONFIG: An exception while reading server responses: 
 java.net.SocketException: Socket closed
 	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:243)
