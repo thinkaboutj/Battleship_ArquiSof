@@ -4,6 +4,7 @@
  */
 package Pantallas;
 
+//import com.pruebapantallas.NewMain;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
@@ -97,17 +98,17 @@ public class SeleccionCrear extends javax.swing.JFrame {
         });
         parpadeoTimer.start();
     }
+private void agregarEventoClic() {
+    lblPressStart.addMouseListener(new java.awt.event.MouseAdapter() {
+        @Override
+        public void mouseClicked(java.awt.event.MouseEvent evt) {
+            // Ejecutar la pantalla de NewMain
+            dispose(); // Cierra la ventana actual
+//            new NewMain(); // Inicia la lógica de NewMain
+        }
+    });
+}
 
-    private void agregarEventoClic() {
-        lblPressStart.addMouseListener(new java.awt.event.MouseAdapter() {
-            @Override
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-             SetUpView setUp = new  SetUpView();
-              setUp.setVisible(true);
-              dispose();
-            }
-        });
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

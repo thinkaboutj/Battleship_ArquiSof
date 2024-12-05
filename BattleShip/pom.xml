@@ -11,4 +11,60 @@
         <maven.compiler.target>21</maven.compiler.target>
         <exec.mainClass>com.mycompany.battleship.BattleShip</exec.mainClass>
     </properties>
+    
+     <dependencies>
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE210</version>
+        </dependency>
+      
+        <!-- Dependencia para JavaFX -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>17.0.2</version>
+        </dependency>
+          <dependency>
+               <groupId>com.pruebapantallas</groupId>
+               <artifactId>battleship_ClientView</artifactId>
+               <version>1.0</version>
+          </dependency>
+     </dependencies>
+
+    <!-- Configuración de plugins y reportes -->
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.9</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>index</report>
+                            <report>dependency-convergence</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <!-- Otros plugins como findbugs, checkstyle, jacoco -->
+        </plugins>
+    </reporting>
+
+    <!-- Build Configuration -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
