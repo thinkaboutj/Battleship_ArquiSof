@@ -16,7 +16,7 @@ import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
  * @author jesus
  */
 public class FleetInitializer {
-
+//
     private BoardController boardController;
     private Map<Integer, BoardTile> boardTiles;
     private List<Integer> shipPlaces;
