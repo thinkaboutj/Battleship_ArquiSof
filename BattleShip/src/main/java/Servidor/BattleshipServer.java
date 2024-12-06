@@ -39,10 +39,10 @@ public class BattleshipServer {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(portNumber);
-            logger.log(DEFAULT_LEVEL, "IP ADDRESS OF THE SERVER: " +
+            logger.log(DEFAULT_LEVEL, "La direccion IP del servidor: " +
                     InetAddress.getLocalHost().toString().split("/")[1]);
         } catch (IOException e) {
-            logger.log(Level.WARNING, "could't create server socket", e);
+            logger.log(Level.WARNING, "No se pudo crear el socket del servidor", e);
         }
         return serverSocket;
     }
@@ -57,7 +57,7 @@ public class BattleshipServer {
                 clientConnectionHandler.setUpStreams();
                 clientConnectionHandler.start();
             } catch (IOException e) {
-                logger.log(Level.WARNING, "couldn't accept connection from client", e);
+                logger.log(Level.WARNING, "No se pudo aceptar la coneccion desde el cliente.", e);
             }
             clients.add(clientConnectionHandler);
         }

@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class InicioView extends javax.swing.JFrame {
 
-   private javax.swing.Timer parpadeoTimer; // Referencia al temporizador
+    private javax.swing.Timer parpadeoTimer; // Referencia al temporizador
 
     public InicioView() {
         initComponents();
@@ -68,7 +68,7 @@ public class InicioView extends javax.swing.JFrame {
         btnCrearPartida.setVisible(true);
         btnUnirsePartida.setVisible(true);
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -135,39 +135,42 @@ public class InicioView extends javax.swing.JFrame {
 
     private void btnCrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPartidaActionPerformed
         // TODO add your handling code here:
-        
-    // Iniciar la aplicación JavaFX (Client)
-    new Thread(() -> {
-        try {
-            Client.main(new String[]{}); // Llama al método main de la clase Client
-        } catch (Exception e) {
-            e.printStackTrace(); // Manejo de excepciones
-        }
-    }).start();
+
+        // Iniciar la aplicación JavaFX (Client)
+        new Thread(() -> {
+            try {
+                this.dispose();
+                Client.main(new String[]{}); // Llama al método main de la clase Client
+            } catch (Exception e) {
+                e.printStackTrace(); // Manejo de excepciones
+            }
+        }).start();
 
 
     }//GEN-LAST:event_btnCrearPartidaActionPerformed
 
     private void btnUnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnirsePartidaActionPerformed
         // TODO add your handling code here:
-        
+
         // Solicitar al usuario que ingrese un código
-    String codigo = JOptionPane.showInputDialog(this, "Ingresa el código de la partida:", "Unirse a Partida", JOptionPane.PLAIN_MESSAGE);
-    
-    // Verificar si se ingresó un código
-    if (codigo != null && !codigo.trim().isEmpty()) {
-        // Iniciar la aplicación JavaFX (Client)
-    new Thread(() -> {
-        try {
-            Client.main(new String[]{}); // Llama al método main de la clase Client
-        } catch (Exception e) {
-            e.printStackTrace(); // Manejo de excepciones
+        String codigo = JOptionPane.showInputDialog(this, "Ingresa el código de la partida:", "Unirse a Partida", JOptionPane.PLAIN_MESSAGE);
+
+        // Verificar si se ingresó un código
+        if (codigo != null && !codigo.trim().isEmpty()) {
+            // Iniciar la aplicación JavaFX (Client)
+            new Thread(() -> {
+                try {
+                    this.dispose();
+                    Client.main(new String[]{}); // Llama al método main de la clase Client
+
+                } catch (Exception e) {
+                    e.printStackTrace(); // Manejo de excepciones
+                }
+            }).start();
+        } else {
+            // Mostrar un mensaje de error si no se ingresó un código válido
+            JOptionPane.showMessageDialog(this, "Debe ingresar un código válido para continuar.", "Error", JOptionPane.ERROR_MESSAGE);
         }
-    }).start();
-    } else {
-        // Mostrar un mensaje de error si no se ingresó un código válido
-        JOptionPane.showMessageDialog(this, "Debe ingresar un código válido para continuar.", "Error", JOptionPane.ERROR_MESSAGE);
-    }
     }//GEN-LAST:event_btnUnirsePartidaActionPerformed
 
     /**

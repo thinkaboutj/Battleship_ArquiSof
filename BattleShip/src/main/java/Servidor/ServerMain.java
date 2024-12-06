@@ -6,7 +6,7 @@ package Servidor;
  */
 public class ServerMain {
     public static void main(String[] args) {
-        System.out.println("Server is running...");
+        System.out.println("EL servidor se encuentra en curso...");
         BattleshipServer server = new BattleshipServer();
         server.proceed();
     }

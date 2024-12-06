@@ -1,0 +1,169 @@
+Dec 05, 2024 9:21:11 PM Cliente.network.SocketClient setUpStreamsOnSocket
+CONFIG: Setting up streams and socket
+Dec 05, 2024 9:21:11 PM Cliente.network.SocketClient createUpdatesThreadAndRunIt
+CONFIG: Creating a thread for reading server updates
+Dec 05, 2024 9:21:11 PM Cliente.network.SocketClient readServerUpdatesContinuously
+CONFIG: Reading server updates continously
+Dec 05, 2024 9:21:11 PM Cliente.Game.Game buildPlayersBoard
+CONFIG: Construyendo el tablero del jugador
+Dec 05, 2024 9:21:11 PM Cliente.network.SocketClient sendStringToServer
+CONFIG: Attempting sent string to server = safa
+Dec 05, 2024 9:21:11 PM Cliente.network.SocketClient sendStringToServer
+CONFIG: Sent string to server = safa
+Dec 05, 2024 9:21:12 PM Cliente.Game.Game placePlayersShips
+CONFIG: Configurando los barcos de los jugadores
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 1 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 14 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 20 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 81 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 56 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 66 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 58 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 68 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 86 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 87 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 33 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 34 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 44 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 52 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 62 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 63 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 8 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 9 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 19 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:12 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 29 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.Game placePlayersShips
+CONFIG: Configurando los barcos de los jugadores
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 8 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 16 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 73 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 81 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 10 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 20 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 28 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 38 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 68 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 69 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 12 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 13 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 23 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 75 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 85 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 86 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 51 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 52 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 53 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:14 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 54 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.Game placePlayersShips
+CONFIG: Configurando los barcos de los jugadores
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 20 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 29 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 61 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 96 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 16 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 17 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 45 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 55 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 80 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 90 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 13 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 23 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 33 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 82 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 83 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 84 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 58 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 68 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 78 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:15 PM Cliente.Game.FleetInitializer changeTileStyle
+CONFIG: Configurar nuevo color: 88 to -fx-base: #ae857a;
+Dec 05, 2024 9:21:17 PM Cliente.Game.Game buildOpponentsBoard
+CONFIG: Construyendo el tablero del oponente
+Dec 05, 2024 9:21:17 PM Cliente.network.SocketClient sendStringToServer
+CONFIG: Attempting sent string to server = FLEET_REQUEST:[20,29,61,96,16,17,45,55,80,90,13,23,33,82,83,84,58,68,78,88];
+Dec 05, 2024 9:21:17 PM Cliente.network.SocketClient sendStringToServer
+CONFIG: Sent string to server = FLEET_REQUEST:[20,29,61,96,16,17,45,55,80,90,13,23,33,82,83,84,58,68,78,88];
+Dec 05, 2024 9:21:19 PM Cliente.network.SocketClient sendStringToServer
+CONFIG: Attempting sent string to server = EXIT
+Dec 05, 2024 9:21:19 PM Cliente.network.SocketClient sendStringToServer
+CONFIG: Sent string to server = EXIT
+Dec 05, 2024 9:21:22 PM Cliente.network.SocketClient readServerUpdatesContinuously
+CONFIG: An exception while reading server responses: 
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:243)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:329)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:372)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:215)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:169)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at Cliente.network.SocketClient.readUpdateFromServer(SocketClient.java:76)
+	at Cliente.network.SocketClient.readServerUpdatesContinuously(SocketClient.java:65)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+

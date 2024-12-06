@@ -38,7 +38,7 @@ public class FleetInitializer {
     private void changeTileStyle(int tileId) {
         BoardTile boardTile = boardTiles.get(tileId);
         String style = Styles.SHIP_PLACED_COLOR;
-        AppLogger.logger.log(DEFAULT_LEVEL, "Setting new color of tile " + tileId + " to " + style);
+        AppLogger.logger.log(DEFAULT_LEVEL, "Configurar nuevo color: " + tileId + " to " + style);
         boardTile.setStyle(style);
     }
 }

@@ -42,13 +42,13 @@ public class Game {
    }
 
    public void buildPlayersBoard(PlayerBoardController boardController) {
-       logger.log(DEFAULT_LEVEL, "Building player's board");
+       logger.log(DEFAULT_LEVEL, "Construyendo el tablero del jugador");
        this.playerBoardController = boardController;
        boardController.buildBoard();
    }
 
    public void buildOpponentsBoard(OpponentBoardController boardController) {
-       logger.log(DEFAULT_LEVEL, "Building opponent's board");
+       logger.log(DEFAULT_LEVEL, "Construyendo el tablero del oponente");
        this.opponentBoardController = boardController;
        boardController.buildBoard();
    }
@@ -59,7 +59,7 @@ public class Game {
    }
 
    public void placePlayersShips() {
-       logger.log(DEFAULT_LEVEL, "Setting fleet for player");
+       logger.log(DEFAULT_LEVEL, "Configurando los barcos de los jugadores");
        playerBoardController.placeShips();
    }
 
@@ -90,7 +90,7 @@ public class Game {
                        break;
                    }
                    case PLAYER_TURN: {
-                       statusController.setPlayersLabel("Your turn!");
+                       statusController.setPlayersLabel("Es tu turno!");
                        opponentBoardController.setBoardDisabled(false);
                        break;
                    }
@@ -117,7 +117,7 @@ public class Game {
                        break;
                    }
                    case OPPONENT_TURN: {
-                       statusController.setPlayersLabel("Wait for opponent move...");
+                       statusController.setPlayersLabel("Espera por el moviemiento del oponente...");
                        opponentBoardController.setBoardDisabled(true);
                        break;
                    }
@@ -143,9 +143,9 @@ public class Game {
                    case GAME_WON: {
                        opponentBoardController.setBoardDisabled(true);
                        if (message.getBody().equals("true")) {
-                           statusController.setPlayersLabel("You have won!");
+                           statusController.setPlayersLabel("Tu has ganado la partida :D!");
                        } else {
-                           statusController.setPlayersLabel("You lost!");
+                           statusController.setPlayersLabel("Tu has perdido la partida, suerte a la proxima!");
                        }
                        closeSocketConnection();
                        break game_loop;
@@ -165,7 +165,7 @@ public class Game {
    }
 
    public void makeAMove(Integer tileIndex) {
-       logger.log(DEFAULT_LEVEL, "The tile index that was clicked " + tileIndex);
+       logger.log(DEFAULT_LEVEL, "Se ha hecho un click en el cuadrado" + tileIndex);
        String regularMoveMessage = Header.MOVE_REGULAR + NetworkMessage.RESPONSE_HEADER_SPLIT_CHARACTER
                + tileIndex + NetworkMessage.RESPONSE_SPLIT_CHARACTER;
        if (socketClient != null) {

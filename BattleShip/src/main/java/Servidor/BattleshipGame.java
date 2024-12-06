@@ -35,7 +35,7 @@ public class BattleshipGame {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                logger.log(DEFAULT_LEVEL, "Server game main thread interrupted");
+                logger.log(DEFAULT_LEVEL, "EL hilo del servidor del juego ha sido interrumpido");
             }
             currentState = currentState.transform();
         }

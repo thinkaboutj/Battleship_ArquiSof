@@ -121,8 +121,8 @@ public class MainMenuController {
         game.setStatusController(new StatusController(playersLabel));
         socketProgressIndicator.setVisible(true);
         try {
-            gameStatusLabel.setText("Trying to connect to the server: " + hostIP);
-            featureButton.setText("Connecting...");
+            gameStatusLabel.setText("Tratando de conectar con el servidor: " + hostIP);
+            featureButton.setText("Conectando...");
             socketClient = SocketClient.createSocketClientWithSocket(hostIP, port);
             game.setSocketClient(socketClient);
             socketProgressIndicator.setVisible(false);
@@ -131,10 +131,10 @@ public class MainMenuController {
             buildPlayerBoard();
         } catch (IOException e) {
             logger.log(Level.WARNING,
-                    "The client could not connect to the server", e);
-            gameStatusLabel.setText("I couldn't connect to the server");
+                    "El cliente no pudo conectarse al servidor", e);
+            gameStatusLabel.setText("No pude conectarme al servidor :C, Debes iniciar el servidor antes de jugar!!");
             socketProgressIndicator.setVisible(false);
-            featureButton.setText("Send");
+            featureButton.setText("Confirmar");
         }
     }
 
@@ -154,7 +154,7 @@ public class MainMenuController {
     }
 
     private void buildPlayerBoard() {
-        Platform.runLater(() -> playersLabel.setText("Set up your ships"));
+        Platform.runLater(() -> playersLabel.setText("Posiciona tus barcos!"));
         game.buildPlayersBoard(new PlayerBoardController(
                 new GameBoard(this.playersGridPane), game));
         fleetSetupButton.setVisible(true);
@@ -172,7 +172,7 @@ public class MainMenuController {
         sendToServerButton.setVisible(false);
         playersGridPane.setDisable(true);
         opponentsGridPane.setDisable(true);
-        Platform.runLater(() -> playersLabel.setText("Wait for opponent's ships placement"));
+        Platform.runLater(() -> playersLabel.setText("Esperando por el posicionamiento de barcos del oponente"));
 
         game.buildOpponentsBoard(new OpponentBoardController(
                 new GameBoard(opponentsGridPane), game));
@@ -181,7 +181,7 @@ public class MainMenuController {
             try {
                 game.runTheGame();
             } catch (InterruptedException e) {
-                logger.log(DEFAULT_LEVEL, "Game interrupted");
+                logger.log(DEFAULT_LEVEL, "Juego interrumpido");
                 Thread.currentThread().interrupt();
             }
         }).start();
