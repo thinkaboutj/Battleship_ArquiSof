@@ -1,4 +1,4 @@
-package com.spanish_inquisition.battleship.common;
+package Servidor.utilerias;
 
 import java.util.Arrays;
 import java.util.List;

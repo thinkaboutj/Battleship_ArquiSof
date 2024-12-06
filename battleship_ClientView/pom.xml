@@ -15,9 +15,27 @@
     <!-- Desarrolladores del proyecto -->
     <developers>
         <developer>
-            <name>Tu Nombre</name>
+            <name>Jesus Medina</name>
             <roles>
                 <role>Desarrollador</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Chris Elizalde</name>
+            <roles>
+                <role>Desarrollador</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Jose Miguel</name>
+            <roles>
+                <role>Desarollador / Analista</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Angel Santos</name>
+            <roles>
+                <role>Desarollador / Analista</role>
             </roles>
         </developer>
     </developers>

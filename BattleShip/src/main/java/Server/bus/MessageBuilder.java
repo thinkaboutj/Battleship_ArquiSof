@@ -1,7 +1,7 @@
 package Server.bus;
 
-import com.spanish_inquisition.battleship.common.Header;
-import com.spanish_inquisition.battleship.common.NetworkMessage;
+import Servidor.utilerias.Header;
+import Servidor.utilerias.NetworkMessage;
 import Servidor.fleet.Ship;
 
 /**

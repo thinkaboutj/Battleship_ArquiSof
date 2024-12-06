@@ -1,13 +1,13 @@
 package Cliente.network;
 
-import com.spanish_inquisition.battleship.common.NetworkMessage;
+import Servidor.utilerias.NetworkMessage;
 
 import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
-import static com.spanish_inquisition.battleship.common.AppLogger.logger;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.logger;
 
 /**
  * 

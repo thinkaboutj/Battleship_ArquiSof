@@ -1,6 +1,6 @@
 package Servidor;
 
-import com.spanish_inquisition.battleship.common.AppLogger;
+import Servidor.utilerias.AppLogger;
 import Server.bus.MessageBus;
 import Servidor.game_states.GameState;
 import Servidor.game_states.PlacingShipsState;
@@ -8,7 +8,7 @@ import Servidor.game_states.PlacingShipsState;
 import java.util.List;
 import java.util.logging.Logger;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
 
 /**
  * 

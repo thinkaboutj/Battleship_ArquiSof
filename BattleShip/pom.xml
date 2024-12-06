@@ -5,6 +5,36 @@
     <artifactId>BattleShip</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
+    <!-- Desarrolladores del proyecto -->
+    <developers>
+        <developer>
+            <name>Jesus Medina</name>
+            <roles>
+                <role>Desarrollador</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Chris Elizalde</name>
+            <roles>
+                <role>Desarrollador</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Jose Miguel</name>
+            <roles>
+                <role>Desarollador / Analista</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Angel Santos</name>
+            <roles>
+                <role>Desarollador / Analista</role>
+            </roles>
+        </developer>
+    </developers>
+    
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
@@ -12,7 +42,7 @@
         <exec.mainClass>com.mycompany.battleship.BattleShip</exec.mainClass>
     </properties>
     
-     <dependencies>
+    <dependencies>
         <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>AbsoluteLayout</artifactId>
@@ -30,12 +60,12 @@
             <artifactId>javafx-fxml</artifactId>
             <version>17.0.2</version>
         </dependency>
-          <dependency>
-               <groupId>com.pruebapantallas</groupId>
-               <artifactId>battleship_ClientView</artifactId>
-               <version>1.0</version>
-          </dependency>
-     </dependencies>
+        <dependency>
+            <groupId>com.pruebapantallas</groupId>
+            <artifactId>battleship_ClientView</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
     <!-- Configuración de plugins y reportes -->
     <reporting>

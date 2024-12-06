@@ -1,4 +1,4 @@
-package com.spanish_inquisition.battleship.common;
+package Servidor.utilerias;
 
 import Cliente.board.GameBoardBuilder;
 

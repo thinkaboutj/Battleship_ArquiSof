@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
-import static com.spanish_inquisition.battleship.common.AppLogger.initializeLogger;
-import static com.spanish_inquisition.battleship.common.AppLogger.logger;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.initializeLogger;
+import static Servidor.utilerias.AppLogger.logger;
 
 /**
  * 

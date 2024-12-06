@@ -1,7 +1,7 @@
 package Servidor.game_states;
 
-import com.spanish_inquisition.battleship.common.Header;
-import com.spanish_inquisition.battleship.common.NetworkMessage;
+import Servidor.utilerias.Header;
+import Servidor.utilerias.NetworkMessage;
 import Servidor.Player;
 import Servidor.Players;
 import Server.bus.MessageBus;

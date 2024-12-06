@@ -1,6 +1,6 @@
 package Cliente;
 
-import com.spanish_inquisition.battleship.common.AppLogger;
+import Servidor.utilerias.AppLogger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

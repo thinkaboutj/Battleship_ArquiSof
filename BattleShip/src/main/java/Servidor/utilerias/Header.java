@@ -1,8 +1,8 @@
-package com.spanish_inquisition.battleship.common;
+package Servidor.utilerias;
 
 import java.util.logging.Level;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.logger;
+import static Servidor.utilerias.AppLogger.logger;
 
 /**
  * 

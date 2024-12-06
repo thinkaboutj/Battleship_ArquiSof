@@ -1,8 +1,8 @@
 package Server.bus;
 
-import com.spanish_inquisition.battleship.common.AppLogger;
-import com.spanish_inquisition.battleship.common.Header;
-import com.spanish_inquisition.battleship.common.NetworkMessage;
+import Servidor.utilerias.AppLogger;
+import Servidor.utilerias.Header;
+import Servidor.utilerias.NetworkMessage;
 import Server.bus.Message;
 import Servidor.fleet.Ship;
 

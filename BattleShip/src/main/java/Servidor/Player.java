@@ -3,8 +3,8 @@ package Servidor;
 import Servidor.fleet.Fleet;
 import Servidor.fleet.Ship;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
-import static com.spanish_inquisition.battleship.common.AppLogger.logger;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.logger;
 
 /**
  * 

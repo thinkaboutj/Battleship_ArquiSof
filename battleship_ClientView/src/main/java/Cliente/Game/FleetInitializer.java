@@ -2,14 +2,14 @@ package Cliente.Game;
 
 import Cliente.board.BoardTile;
 import Cliente.boardController.BoardController;
-import com.spanish_inquisition.battleship.common.AppLogger;
-import com.spanish_inquisition.battleship.common.Styles;
+import Servidor.utilerias.AppLogger;
+import Servidor.utilerias.Styles;
 import javafx.application.Platform;
 
 import java.util.List;
 import java.util.Map;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
 
 /**
  * 

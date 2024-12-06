@@ -6,7 +6,7 @@ import Cliente.board.GameBoardBuilder;
 import Cliente.Game.FleetInitializer;
 import Cliente.Game.Game;
 import Cliente.Game.ServerMessageCreator;
-import com.spanish_inquisition.battleship.common.Styles;
+import Servidor.utilerias.Styles;
 import javafx.application.Platform;
 
 import java.util.Map;

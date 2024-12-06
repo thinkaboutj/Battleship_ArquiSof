@@ -1,7 +1,7 @@
 package Cliente.network;
 
-import com.spanish_inquisition.battleship.common.AppLogger;
-import com.spanish_inquisition.battleship.common.Header;
+import Servidor.utilerias.AppLogger;
+import Servidor.utilerias.Header;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
 
 /**
  * 

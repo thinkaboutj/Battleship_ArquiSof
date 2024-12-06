@@ -1,6 +1,6 @@
 package Servidor;
 
-import com.spanish_inquisition.battleship.common.Header;
+import Servidor.utilerias.Header;
 import Server.bus.MessageBus;
 
 import java.io.BufferedReader;
@@ -13,8 +13,8 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.logging.Level;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.DEFAULT_LEVEL;
-import static com.spanish_inquisition.battleship.common.AppLogger.logger;
+import static Servidor.utilerias.AppLogger.DEFAULT_LEVEL;
+import static Servidor.utilerias.AppLogger.logger;
 import static Servidor.BattleshipServer.SERVER_ID;
 
 /**

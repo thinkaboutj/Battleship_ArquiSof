@@ -1,12 +1,12 @@
 package Servidor.fleet;
 
-import com.spanish_inquisition.battleship.common.NetworkMessage;
+import Servidor.utilerias.NetworkMessage;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 
-import static com.spanish_inquisition.battleship.common.AppLogger.logger;
+import static Servidor.utilerias.AppLogger.logger;
 
 /**
  * 

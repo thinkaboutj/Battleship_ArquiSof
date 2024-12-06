@@ -1,6 +1,6 @@
 package Cliente.Game;
 
-import com.spanish_inquisition.battleship.common.Header;
+import Servidor.utilerias.Header;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package Cliente.board;
 
-import com.spanish_inquisition.battleship.common.Styles;
+import Servidor.utilerias.Styles;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Paint;

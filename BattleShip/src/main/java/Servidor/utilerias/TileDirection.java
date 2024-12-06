@@ -1,7 +1,7 @@
-package com.spanish_inquisition.battleship.common;
+package Servidor.utilerias;
 
-import static com.spanish_inquisition.battleship.common.AdjacentTilesCalc.translateCoordinatesToIndex;
-import static com.spanish_inquisition.battleship.common.AdjacentTilesCalc.translateIndexToCoordinates;
+import static Servidor.utilerias.AdjacentTilesCalc.translateCoordinatesToIndex;
+import static Servidor.utilerias.AdjacentTilesCalc.translateIndexToCoordinates;
 
 /**
  * 
